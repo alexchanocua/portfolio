@@ -14,10 +14,10 @@ export const App = () => {
     <>
         <Header/>
         <Nav />
-        <About />
-        <Experience />
-        <Services/>
-        <Portfolio />
+        <About  />
+        <Experience  />
+        {/* <Services  /> */}
+        <Portfolio  />
         <Testimonials />
         <Contact />
         <Footer />

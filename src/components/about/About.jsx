@@ -29,8 +29,8 @@ const About = () => {
 
             <article className="about__card">
               <FiUsers className='about__icon'/>
-              <h5>Clients</h5>
-              <small>200+ clients worldwide</small>
+              <h5>Location</h5>
+              <small>Southern California OC Area</small>
             </article>
 
             <article className="about__card">
@@ -40,7 +40,9 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo quisquam assumenda et, animi blanditiis ipsam esse repellat, quo quasi enim cumque? Accusantium ea voluptatibus cupiditate laborum veniam perferendis expedita.
+            I am passionate about creating interactive applications and experiences with a focus on the MERN/PERN stack, but still exploring
+            other technologies and frameworks that catch my interest. If you're looking for a developer 
+            to add to your team, I'd love to hear from you! 
           </p>
 
           <a href="#contact" className="btn btn-primary">Let's Talk</a>

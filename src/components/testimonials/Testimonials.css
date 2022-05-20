@@ -1,3 +1,6 @@
+#testimonials {
+    height: 100vh;
+}
 .container.testimonials__container {
     width: 40%;
     padding-bottom: 4rem;

@@ -1,3 +1,8 @@
+#experience {
+    background: var(--color-bg-3);
+    height: 100vh;
+}
+
 .experience__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,6 +34,7 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
 }
+
 
 .experience__details {
     display: flex;
