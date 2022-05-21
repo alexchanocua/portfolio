@@ -76,6 +76,11 @@ a {
     color: var(--color-off-white);
 }
 
+form > h4 {
+    color: var(--color-off-white);
+    display: flex;
+    justify-content: center;
+}
 /* ==== Media Queries (Medium Devices) ==== */
 @media screen and (max-width: 1024px) {
     .container.contact__container {

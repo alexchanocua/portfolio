@@ -43,7 +43,10 @@ const Contact = () => {
         </div>
         {/* End of contact options */}
 
+        
+
         <form ref={form} onSubmit={sendEmail}>
+          <h4>Or send me an email direct.</h4>
           <input type="text" name="name" placeholder='Your Full Name' required/>
           <input type="email" name='email' placeholder='Your Email' required/>
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
