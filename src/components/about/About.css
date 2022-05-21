@@ -80,6 +80,7 @@
     color: var(--color--light);
 }
 
+
 /* ==== Media Queries (Medium Devices) ==== */
 @media screen and (max-width: 1024px) {
     .about__container {

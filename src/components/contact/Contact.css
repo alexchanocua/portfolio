@@ -1,3 +1,6 @@
+#contact {
+    background: var(--color-bg-3);
+}
 .container.contact__container {
     width: 58%;
     display: grid;
@@ -12,12 +15,12 @@
 }
 
 .contact__option {
-    background: var(--color-bg-variant);
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
-    border: 1px solid transparent;
+    border: 1px solid var(--color-off-white);
     transition: var(--transition);
+    color: var(--color-off-white);
 }
 
 .contact__option:hover {
@@ -40,7 +43,9 @@
     font-size: 0.66rem;
 }
 
-
+#getin, #contactme {
+    color: var(--color-off-white);
+}
 
 /* ==== FORM ==== */
 
@@ -50,14 +55,25 @@ form {
     gap: 1.2rem;
 }
 
+
 input, textarea {
     width:100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    border: 1px solid var(--color-off-white);
     resize: none;
-    color: var(--color-white);
+    color: var(--color-off-white);
+}
+
+.btn {
+    border: 1px solid var(--color-off-white);
+    background: var(--color-bg-3);
+    color: var(--color-off-white);
+}
+
+a {
+    color: var(--color-off-white);
 }
 
 /* ==== Media Queries (Medium Devices) ==== */

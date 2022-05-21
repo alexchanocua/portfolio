@@ -93,6 +93,16 @@ header {
     color: var(--color-bg-3);
 }
 
+.ctaButton {
+    color: var(--color-bg-3);
+}
+
+.btn.resume {
+    background: transparent;
+    border-color: var(--color-bg-3);
+    color: var(--color-bg-3);
+}
+
 /* ==== Media Queries (Medium Devices) ==== */
 @media screen and (max-width: 1024px) {
     header {
@@ -115,6 +125,6 @@ header {
 
     .circle {
         width: 50px;
-    height: 50px;
+        height: 50px;
     }
 }

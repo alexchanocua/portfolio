@@ -1,6 +1,6 @@
 import React from 'react';
 import './Portfolio.css';
-import  img1 from '../../assets/portfolio1.jpg';
+import  img1 from '../../assets/portfolio.jpg';
 import  img2 from '../../assets/portfolio2.jpg';
 import  img3 from '../../assets/portfolio3.jpg';
 import  img4 from '../../assets/portfolio4.jpg';
@@ -11,45 +11,11 @@ const portfolioData = [
   {
     id: 1,
     image: img1,
-    title: 'Demo Title',
-    github: 'https://github.com',
-    demo: 'https://https://dribbble.com/Tubik'
+    title: 'ultra',
+    github: 'https://github.com/alexchanocua/ultraV2',
+    demo: 'https://alexchanocua.github.io/ultraV2/'
   },
-  {
-    id: 2,
-    image: img2,
-    title: 'Demo Title',
-    github: 'https://github.com',
-    demo: 'https://https://dribbble.com/Tubik'
-  },
-  {
-    id: 3,
-    image: img3,
-    title: 'Demo Title',
-    github: 'https://github.com',
-    demo: 'https://https://dribbble.com/Tubik'
-  },
-  {
-    id: 4,
-    image: img4,
-    title: 'Demo Title',
-    github: 'https://github.com',
-    demo: 'https://https://dribbble.com/Tubik'
-  },
-  {
-    id: 5,
-    image: img5,
-    title: 'Demo Title',
-    github: 'https://github.com',
-    demo: 'https://https://dribbble.com/Tubik'
-  },
-  {
-    id: 6,
-    image: img6,
-    title: 'Demo Title',
-    github: 'https://github.com',
-    demo: 'https://https://dribbble.com/Tubik'
-  }
+
 ]
 
 const Portfolio = () => {
@@ -70,13 +36,13 @@ const Portfolio = () => {
                   <div className="portfolio__item-cta">
                   <a 
                     href={github} 
-                    className='btn'
+                    className='btn-clear'
                     target='_blank'
                     >Github
                   </a>
                   <a 
                     href={demo} 
-                    className='btn btn-primary' 
+                    className='btn-clear' 
                     target='_blank'>Live Demo
                   </a>
                   </div>

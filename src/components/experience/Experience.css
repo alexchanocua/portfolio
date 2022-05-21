@@ -10,23 +10,27 @@
 }
 
 .experience__container > div {
-    background: var(--color-bg-variant);
+    /* background: var(--color-bg-variant); */
     padding: 2.4rem 5rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
+    border: 1px solid var(--color-bg-2);
     transition: var(--transition);
 }
 
 .experience__container > div:hover {
     background: transparent;
-    border-color: var(--color-primary-variant);
+    border-color: var(--color-bg-2);
     cursor: default;
 }
 
 .experience__container > div h3 {
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--color-primary);
+    color: var(--color-bg-2);
+}
+
+.experience__container > div h4 {
+    color: var(--color-bg-2)
 }
 
 .experience__content {
@@ -43,7 +47,7 @@
 
 .experience__details-icon {
     margin-top: 6px;
-    color: var(--color-primary);
+    color: var(--color-bg-2);
 }
 
 /* ==== Media Queries (Medium Devices) ==== */
@@ -62,6 +66,10 @@
     .experience__content {
         padding: 1rem;
     }
+}
+
+#experienceHeader {
+    color: var(--color-bg-2);
 }
 
 /* ==== Media Queries (Small Devices) ==== */
