@@ -61,7 +61,14 @@ const Experience = () => {
             <article className='experience__details'>
               <BsCheckCircleFill className='experience__details-icon'/>
               <div>
-                <h4>React</h4>
+                <h4>ReactJS</h4>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <BsCheckCircleFill className='experience__details-icon'/>
+              <div>
+                <h4>Material UI</h4>
               </div>
             </article>
 
@@ -94,6 +101,15 @@ const Experience = () => {
                 <h4>MongoDB</h4>
               </div>
             </article>
+
+            <article className='experience__details'>
+              <BsCheckCircleFill className='experience__details-icon'/>
+              <div>
+                <h4>Express</h4>
+              </div>
+            </article>
+
+            
           </div>
           {/* end of backend */}
 
