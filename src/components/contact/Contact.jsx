@@ -43,8 +43,6 @@ const Contact = () => {
         </div>
         {/* End of contact options */}
 
-        
-
         <form ref={form} onSubmit={sendEmail}>
           <h4>Or send me an email direct.</h4>
           <input type="text" name="name" placeholder='Your Full Name' required/>
