@@ -1,0 +1,87 @@
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer {
+    width: 95%;
+    height: 75%;
+    border-radius: 12px;
+    background-color: var(--color-bg);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.titleCloseBtn {
+    display: flex;
+    justify-content: end;
+}
+
+.titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modalContainer .body {
+    flex: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.modalImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer img {
+    aspect-ratio: 1/1;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 1.5rem;
+}
+
+/* ==== Media Queries (Medium Devices) ==== */
+@media screen and (max-width: 1024px) {
+    .modalContainer .body {
+        flex-direction: column;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+/* ==== Media Queries (Small Devices) ==== */
+@media screen and (max-width: 600px) {
+    .modalContainer .body {
+        flex-direction: column;
+    }
+
+    .modalImage {
+       display: none;
+    }
+}
