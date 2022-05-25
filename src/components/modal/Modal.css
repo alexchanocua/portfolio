@@ -1,4 +1,4 @@
-.modalBackground {
+.modal__background {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.modalContainer {
+.modal__container {
     width: 95%;
     height: 75%;
     border-radius: 12px;
@@ -20,6 +20,7 @@
     animation: fadein .5s;
 }
 
+
 @keyframes fadein {
 	from {
 		opacity:0;
@@ -30,7 +31,7 @@
 }
 
 
-.modalContainer .title {
+.modal__fontainer .title {
     display: inline-block;
     text-align: center;
     margin-top: 10px;
@@ -48,7 +49,7 @@
     cursor: pointer;
 }
 
-.modalContainer .body {
+.modal__container .body {
     flex: 50%;
     display: flex;
     flex-direction: row;
@@ -61,38 +62,46 @@
     margin: 1rem;
 }
 
-.description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.modalContainer img {
+.modal__container img {
     aspect-ratio: 1/1;
     height: 30rem;
     width: 30rem;
     border-radius: 1.5rem;
 }
 
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+}
+
+
 /* ==== Media Queries (Medium Devices) ==== */
 @media screen and (max-width: 1024px) {
-    .modalContainer .body {
+    .modal__container .body {
+        display: flex;
         flex-direction: column;
     }
 
-    img {
-        display: none;
+    .modal__container img {
+        aspect-ratio: 1/1;
+        height: 10rem;
+        width: 10rem;
     }
 }
 
 /* ==== Media Queries (Small Devices) ==== */
 @media screen and (max-width: 600px) {
-    .modalContainer .body {
+    .modal__container .body {
+        display: flex;
         flex-direction: column;
     }
 
-    .modalImage {
-       display: none;
+    .modal__container img {
+        aspect-ratio: 1/1;
+        height: 10rem;
+        width: 10rem;
     }
 }
