@@ -8,7 +8,7 @@ const Modal = ( {closeModal, modalInfo} ) => {
     <div className="modalBackground">
       <div className="modalContainer">
         <div className="titleCloseBtn">
-        <button onClick={() => {closeModal(false)}}>&times;</button>
+          <button onClick={() => {closeModal(false)}}>&times;</button>
         </div>
         
         <div className="title">
