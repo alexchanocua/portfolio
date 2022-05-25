@@ -1,12 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Portfolio.css';
 import  img1 from '../../assets/portfolio.jpg';
-import  img2 from '../../assets/portfolio2.jpg';
-import  img3 from '../../assets/portfolio3.jpg';
-import  img4 from '../../assets/portfolio4.jpg';
-import  img5 from '../../assets/portfolio5.png';
-import  img6 from '../../assets/portfolio6.jpg';
-import Modal from '../modal/Modal';
+import  img2 from '../../assets/roverImage.jpg';
+// import Modal from '../modal/Modal';
+import BasicModal from '../modal/Modal2';
 
 const portfolioData = [
   {
@@ -16,15 +13,30 @@ const portfolioData = [
     github: 'https://github.com/alexchanocua/ultraV2',
     demo: 'https://alexchanocua.github.io/ultraV2/',
     description: 'User profiled Photo/Art image sharing site.',
-    tech: ['PostgreSQL', 'ExpressJS', 'ReactJS', 'NodeJS', 'MaterialUI' ]
+    tech: ['PostgreSQL', 'ExpressJS', 'ReactJS', 'NodeJS', 'MaterialUI', 'JavaScript' ]
+  },
+
+  {
+    id: 1,
+    image: img2,
+    title: 'L.A./B.O.E. Mobile UI',
+    github: 'https://github.com/pramirezx/BOE-Sidewalk-Monitoring-System',
+    demo: 'https://alexchanocua.github.io/ultraV2/',
+    description: 'Led a project for the City of Los Angeles and Bureau of Engineering through CSULA to develop software that' +
+    ' included a Web App to render photo images with slope data, a mobile UI to control the rover, database and backend endpoints, and gathering physical' +
+    ' slope data measurements from our test sites. I specifically developed the Mobile UI to control the Rover that began and packaged the collected data for data processing.',
+    tech: ['Javascript', 'Bootstrap', 'CSS', 'HTML', 'rosLibJS' ]
   },
 
 ]
 
-const Portfolio = ( {setOpenModal, setModalInfo} ) => {
+const Portfolio = ( ) => {
   
+  const [open, setOpen ] = useState(false);
+  const [modalInfo, setModalInfo] = useState({});
+
   const handleModal = (image, title, description, tech) => {
-    setOpenModal(true);
+    setOpen(true);
     setModalInfo({ image, title, description, tech });
   }
 
@@ -57,6 +69,7 @@ const Portfolio = ( {setOpenModal, setModalInfo} ) => {
                     target='_blank'>Live Demo
                   </a>
                   </div>
+                  <BasicModal open={open} onClose={()=> setOpen(false)} modalInfo={modalInfo} />
               </article>
             )
           })

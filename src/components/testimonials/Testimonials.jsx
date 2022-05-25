@@ -33,7 +33,10 @@ const testimonialData =[
   {
     avatar: avt4,
     name: "Juan Jones",
-    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit, nihil quaerat numquam corporis ducimus mollitia alias amet fugit fugiat!"
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit, nihil quaerat numquam corporis ducimus mollitia alias amet fugit fugiat!" +
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit, nihil quaerat numquam corporis ducimus mollitia alias amet fugit fugiat!" +
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit, nihil quaerat numquam corporis ducimus mollitia alias amet fugit fugiat!" +
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit, nihil quaerat numquam corporis ducimus mollitia alias amet fugit fugiat!",
   }
 ]
 

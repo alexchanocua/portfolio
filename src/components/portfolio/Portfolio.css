@@ -21,6 +21,7 @@
 }
 
 .portfolio__item-image {
+    aspect-ratio: 1/1;
     border-radius: 1.5rem;
     overflow: hidden;
     border: 1px solid black;

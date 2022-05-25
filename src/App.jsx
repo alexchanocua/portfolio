@@ -8,37 +8,17 @@ import Portfolio from './components/portfolio/Portfolio';
 import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
-import Modal from './components/modal/Modal';
 
 export const App = () => {
-  const [openModal, setOpenModal] = useState(false);
-  const [modalInfo, setModalInfo] = useState({});
-
-
-  useEffect(() => {
-    if (openModal === true) {
-      document.body.style.overflow = 'hidden';
-    }
-    else {
-      document.body.style.overflow = 'visible';
-    }
-
-  }, [openModal])
 
   return (
     <>
-      { openModal && <Modal 
-                      closeModal={ setOpenModal }
-                      modalInfo={ modalInfo }
-                      /> 
-      }
         <Header/>
-      { !openModal && <Nav /> }
+        <Nav/>
         <About  />
         <Experience  />
         {/* <Services  /> */}
-        <Portfolio setOpenModal={setOpenModal}
-                   setModalInfo={setModalInfo} />
+        <Portfolio/>
         <Testimonials />
         <Contact />
         <Footer />

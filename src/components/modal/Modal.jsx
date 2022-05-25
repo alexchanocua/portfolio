@@ -1,5 +1,13 @@
 import React from 'react';
-import './Modal.css';
+// import './Modal.css';
+// import Swiper core and required modules
+import { Pagination } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const Modal = ( {closeModal, modalInfo} ) => {
 
@@ -21,21 +29,49 @@ const Modal = ( {closeModal, modalInfo} ) => {
             </div>
 
             <div className="description">
-              <div className="summary">
-                <h2>Description</h2>
-                <p>{modalInfo.description}</p>
-              </div>
+              
+              {/* <div className="summary">
+                  <h2>Description:</h2>
+                  <p>{modalInfo.description}</p>
+                </div>
+
               <div className="tech">
-                <h2>Technologies Used</h2>
+                <h2>Technologies Used:</h2>
                 <ul>
                   {modalInfo.tech.map(name => {
                     return(<li>{name}</li>)
                   })}
                 </ul>
-            </div>
+              </div> */}
+
+              <Swiper className='swiper__description'
+                    // install Swiper modules
+                    modules={[Pagination]}
+                    spaceBetween={40}
+                    slidesPerView={1}
+                    pagination={{ clickable: true }}
+              >
+                <SwiperSlide key='1' className="swiper__item">
+                  <div className="summary">
+                    <h2>Description:</h2>
+                    <p>{modalInfo.description}</p>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide className="swiper__item">
+                  <div className="tech">
+                    <h2>Technologies Used:</h2>
+                    <ul>
+                      {modalInfo.tech.map(name => {
+                        return(<li>{name}</li>)
+                      })}
+                    </ul>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+
             </div>
 
-            
           </div>
         </div>
     </div>

@@ -1,0 +1,71 @@
+.modal__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 85%;
+    background: var(--color-bg);
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.body__container {
+    margin: 1.5rem;
+}
+
+.modal-image {
+    aspect-ratio: 1/1;
+    border-radius: 1.5rem;
+    height: 15rem;
+    width: 15rem;
+}
+
+.swiper__container {
+    width: 40%;
+    padding-bottom: 4rem;
+}
+
+.swiper__item {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    user-select: none;
+}
+
+.project__description-content {
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+}
+
+
+/* ==== Media Queries (Medium Devices) ==== */
+@media screen and (max-width: 1024px) {
+    .swiper__container {
+        width: 60%;
+    }
+}
+
+/* ==== Media Queries (Small Devices) ==== */
+@media screen and (max-width: 600px) {
+   .swiper__container {
+       width: var(--container-width-sm);
+   }
+
+   .project__description-content {
+       width: var(--container-width-sm);
+   }
+
+   .modal-image {
+       display: none;
+   }
+}
