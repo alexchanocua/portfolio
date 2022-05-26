@@ -48,11 +48,11 @@
     transition: var(--transition);
 }
 
-.about__card:hover {
+/* .about__card:hover {
     background: transparent;
     border-color: var(--color-bg-3);
     cursor: default;
-}
+} */
 
 .about__icon {
     color: var(--color-primary);
