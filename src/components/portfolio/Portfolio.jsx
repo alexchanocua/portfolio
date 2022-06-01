@@ -4,6 +4,7 @@ import  img1 from '../../assets/portfolio.jpg';
 import  img2 from '../../assets/roverImage.jpg';
 // import Modal from '../modal/Modal';
 import BasicModal from '../modal/Modal2';
+import { Link } from 'react-router-dom';
 
 const portfolioData = [
   {
@@ -40,6 +41,7 @@ const Portfolio = ( ) => {
     setModalInfo({ image, title, description, tech });
   }
 
+
   return (
     <section id='portfolio'>
       <h2>Portfolio</h2>
@@ -63,11 +65,16 @@ const Portfolio = ( ) => {
                     target='_blank'
                     >Github
                   </a>
-                  <a 
-                    href={demo} 
+
+                  <Link to="/ultra">
+                  <div 
+                    onClick={() => {
+                      window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+                    }}
                     className='btn-clear' 
-                    target='_blank'>Live Demo
-                  </a>
+                    target='_blank'>Project Details
+                  </div>
+                  </Link>
                   </div>
                   <BasicModal open={open} onClose={()=> setOpen(false)} modalInfo={modalInfo} />
               </article>

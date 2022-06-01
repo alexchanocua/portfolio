@@ -43,7 +43,7 @@ const testimonialData =[
 const Testimonials = () => {
   return (
     <section id='testimonials'>
-      <h2>Testimonials</h2>
+      <h2>References</h2>
 
       <Swiper className="container testimonials__container"
        // install Swiper modules

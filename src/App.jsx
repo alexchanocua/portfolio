@@ -1,27 +1,28 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
 import About from './components/about/About';
 import Experience from './components/experience/Experience';
-import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import Ultra from './components/ultra/ultra';
+
+import Home from './components/home/home';
+
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 export const App = () => {
 
   return (
     <>
-        <Header/>
-        <Nav/>
-        <About  />
-        <Experience  />
-        {/* <Services  /> */}
-        <Portfolio/>
-        <Testimonials />
-        <Contact />
-        <Footer />
+      <Router>
+        <Routes>
+          <Route path='/*' element={<Home/>} />
+          <Route path='/ultra' element={<Ultra/>} />
+        </Routes>
+      </Router>
     </>
   )
 }
