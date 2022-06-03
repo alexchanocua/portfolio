@@ -8,6 +8,7 @@ import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Ultra from './components/ultra/ultra';
+import MobileUI from './components/mobileUI/mobileUI';
 
 import Home from './components/home/home';
 
@@ -21,6 +22,7 @@ export const App = () => {
         <Routes>
           <Route path='/*' element={<Home/>} />
           <Route path='/ultra' element={<Ultra/>} />
+          <Route path='/mobileUI' element={<MobileUI/>} />
         </Routes>
       </Router>
     </>

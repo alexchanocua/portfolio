@@ -14,7 +14,8 @@ const portfolioData = [
     github: 'https://github.com/alexchanocua/ultraV2',
     demo: 'https://alexchanocua.github.io/ultraV2/',
     description: 'User profiled Photo/Art image sharing site.',
-    tech: ['PostgreSQL', 'ExpressJS', 'ReactJS', 'NodeJS', 'MaterialUI', 'JavaScript' ]
+    tech: ['PostgreSQL', 'ExpressJS', 'ReactJS', 'NodeJS', 'MaterialUI', 'JavaScript' ],
+    component: '/ultra'
   },
 
   {
@@ -26,7 +27,8 @@ const portfolioData = [
     description: 'Led a project for the City of Los Angeles and Bureau of Engineering through CSULA to develop software that' +
     ' included a Web App to render photo images with slope data, a mobile UI to control the rover, database and backend endpoints, and gathering physical' +
     ' slope data measurements from our test sites. I specifically developed the Mobile UI to control the Rover that began and packaged the collected data for data processing.',
-    tech: ['Javascript', 'Bootstrap', 'CSS', 'HTML', 'rosLibJS' ]
+    tech: ['Javascript', 'Bootstrap', 'CSS', 'HTML', 'rosLibJS' ],
+    component: "/mobileUI"
   },
 
 ]
@@ -47,7 +49,7 @@ const Portfolio = ( ) => {
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
         {
-          portfolioData.map(({id, image, title, github, demo, description, tech}) => {
+          portfolioData.map(({id, image, title, github, demo, description, tech, component}) => {
             return(
               <article key={id} className='portfolio__item'>
                 {/* <button className='openModalBtn' onClick={() => {handleModal(image, title, description, tech)}}> */}
@@ -64,7 +66,7 @@ const Portfolio = ( ) => {
                     >Github
                   </a>
 
-                  <Link to="/ultra">
+                  <Link to={component}>
                   <div 
                     onClick={() => {
                       window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
