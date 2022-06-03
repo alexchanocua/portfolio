@@ -5,6 +5,13 @@ footer {
     font-size: 0.9rem;
 }
 
+#backToTop {
+    color: var(--color-bg-3);
+    padding: 0.3rem;
+    margin: 0.5rem;
+    font-style: italic;
+}
+
 footer a {
     color: var(--color-light);
 }

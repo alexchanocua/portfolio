@@ -33,30 +33,28 @@ const portfolioData = [
 
 const Portfolio = ( ) => {
   
-  const [open, setOpen ] = useState(false);
-  const [modalInfo, setModalInfo] = useState({});
+  // const [open, setOpen ] = useState(false);
+  // const [modalInfo, setModalInfo] = useState({});
 
-  const handleModal = (image, title, description, tech) => {
-    setOpen(true);
-    setModalInfo({ image, title, description, tech });
-  }
+  // const handleModal = (image, title, description, tech) => {
+  //   setOpen(true);
+  //   setModalInfo({ image, title, description, tech });
+  // }
 
 
   return (
     <section id='portfolio'>
       <h2>Portfolio</h2>
-      <h5>(click project image for project details)</h5>
-
       <div className="container portfolio__container">
         {
           portfolioData.map(({id, image, title, github, demo, description, tech}) => {
             return(
               <article key={id} className='portfolio__item'>
-                <button className='openModalBtn' onClick={() => {handleModal(image, title, description, tech)}}>
+                {/* <button className='openModalBtn' onClick={() => {handleModal(image, title, description, tech)}}> */}
                 <div className="portfolio__item-image">
                     <img src={image} alt={title} />
                 </div>
-                </button>
+                {/* </button> */}
                   <h3>{title}</h3>
                   <div className="portfolio__item-cta">
                   <a 
@@ -76,7 +74,7 @@ const Portfolio = ( ) => {
                   </div>
                   </Link>
                   </div>
-                  <BasicModal open={open} onClose={()=> setOpen(false)} modalInfo={modalInfo} />
+                  {/* <BasicModal open={open} onClose={()=> setOpen(false)} modalInfo={modalInfo} /> */}
               </article>
             )
           })

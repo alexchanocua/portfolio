@@ -39,8 +39,7 @@ const About = () => {
             </article>
           </div>
           <p>
-            I am passionate about creating interactive applications and experiences with a focus on the MERN/PERN stack, but still exploring
-            other technologies and frameworks that catch my interest. If you're looking for a developer 
+            I am passionate about creating interactive and stable applications👨🏻‍💻. I am a lifelong learner 🎓  and love studying new technologies.  If you're looking for a developer 
             to add to your team, I'd love to hear from you! 
           </p>
 

@@ -1,5 +1,26 @@
 .project {
     background-color: var(--color-bg);
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#backToHome {
+    color: var(--color-bg-3);
+    padding: 0.3rem;
+    margin: 0.5rem;
+    font-style: italic;
+}
+
+#backToHome:hover {
+    background-color: var(--color-bg-2);
 }
 
 .project__container {

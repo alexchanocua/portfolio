@@ -9,13 +9,13 @@ function projectFooter() {
     <footer>
   
     <ul className='project__permalinks'>
-      <li><Link to="/#"><Button onClick={() => {
-          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-        }}>Back to Home</Button></Link></li>
+      <li><Button id="backToTop" onClick={() => {
+          window.scrollTo({top: 0, left: 0});
+        }}>Back to top</Button></li>
     </ul>
 
     <div className="project__footer__socials">
-      <a href="https://linkedin.com"><BsLinkedin/></a>
+      <a href="https://www.linkedin.com/in/alejandro-chanocua-013606194/"><BsLinkedin/></a>
     </div>
 
     <div className="project__footer__copyright">

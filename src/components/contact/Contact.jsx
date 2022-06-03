@@ -37,13 +37,13 @@ const Contact = () => {
           <article className='contact__option'>
             <BsLinkedin className='contact__option-icon'/>
             <h4>Linkedin</h4>
-            <a href="https://linkedin.co" target="_blank">View Linkedin</a>
+            <a href="https://www.linkedin.com/in/alejandro-chanocua-013606194/" target="_blank">View Linkedin</a>
           </article>
         </div>
         {/* End of contact options */}
 
         <form ref={form} onSubmit={sendEmail}>
-          <h4>Or send me an email direct.</h4>
+          <h4>✉️ Or send me an email direct.</h4>
           <input type="text" name="name" placeholder='Your Full Name' required/>
           <input type="email" name='email' placeholder='Your Email' required/>
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
