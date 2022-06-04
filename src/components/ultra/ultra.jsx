@@ -10,7 +10,7 @@ import { Button } from '@mui/material';
 
 const project = {
     title: "Ultra",
-    description: "Art/photography sharing website to display images of art in a focused way without.",
+    description: "Art/photography sharing website to display images of art in a focused way.",
     stack: ['React', 'Node.js', 'Express JS', 'PostgreSQL', 'Material UI',],
     type: 'Social',
     site: 'https://alexchanocua.github.io/ultraV2/',

@@ -7,10 +7,12 @@ footer {
 
 #backToTop {
     color: var(--color-bg-3);
+    background-color: #cac1ab;
     padding: 0.3rem;
     margin: 0.5rem;
     font-style: italic;
 }
+
 
 footer a {
     color: var(--color-light);

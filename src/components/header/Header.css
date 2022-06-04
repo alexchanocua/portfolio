@@ -50,16 +50,6 @@ header {
 
  /* ==== Image styles ==== */
  .me {
-     /* background: linear-gradient(var(--color-primary), transparent);
-     width: 22rem;
-     height: 29rem;
-     position: absolute;
-     left: calc(50% - 11rem);
-     margin-top: 4rem;
-     border-radius: 8rem 8rem 0 0;
-     overflow: hidden;
-     padding: 5rem 1.5rem 1.5rem 1.5rem; */
-     /* background: linear-gradient(transparent, var(--color-primary)); */
      width: 22rem;
      height: 29rem;
      position: absolute;

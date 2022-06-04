@@ -11,15 +11,16 @@ import { Button } from '@mui/material';
 const project = {
     title: "BEO Sidwalk Assesment System",
     description: "Project sponsored by City Of Los Angeles, Department of Public Works, Bureau of Engineering, and CSULA.",
-    stack: ['Javascript', 'HTML', 'CSS', 'rolLibJS (robot operating system API)'],
+    stack: ['Javascript', 'HTML', 'CSS', 'rolLibJS'],
     type: 'Sponsored school project. 👨🏻‍💻',
-    site: 'https://alexchanocua.github.io/ultraV2/',
-    goal: 'To create the ',
-    role: 'I was project lead of 10 in developing various software that measured crossing/running slopes and gps points of sidewalk segments, time signature, 360 photo images, packaged data, a UI that that renders photo images with slope data and specific sidewalk segments, ' +
-        'a backend to process the data to be stored in our database, and process the data so the City of LAs Navigate LA website can map the data on their layer. My specific role was to oversee the project, help out teams with development when needed,  ' +
+    site: '',
+    goal: 'To develop various software that measured crossing/running slopes and gps points of sidewalk segments, time signatures of data collection in conjunction with the prebuilt Rover, 360 photo images, process/package data, a UI that that renders photo images with slope data and specific sidewalk segments, ' +
+    'a backend to process the data to be stored in our database, and process the data so the City of LAs Navigate LA website can map the data on their layer. ',
+    goal2: 'After data collection and processing, the data would be used as an index for severity of sidewalks in the City of LA. Meaning that sidewalks with higher severity would be given priority in repairs to follow Federal ADA standards.',
+    role: 'I was project lead of 10, my specific role was to oversee the project, help out teams with development when needed,  ' +
         ', oversee the documentation of the several components in the project, and develop the mobile UI which initiated the data collection and controlled the rover.',
-    stackExp: 'The mobile UI was built using HTML, CSS, Javascript, and rosLib. ',
-    problems: 'The client requested the rover UI to be intuitively to use and have minimal user interaction while the rover is collecting data. I worked with our advisor and the team to see what data they needed from the rover. I built several iterations of the design and javascript ' + 
+    stackExp: 'The mobile UI was built using HTML, CSS, Javascript, and rosLib. These technologies were their lightweight and low barrier of entry for the next to pick up. ',
+    problems: 'The client requested the rover UI intuitive to use and have minimal user interaction while the rover is collecting data. I worked with our advisor and the team to see what data they needed from the rover. I built several iterations of the design and javascript ' + 
     'that interacted with the robot operating system api (roslib).',
     lessons: 'Working on this project I took an approach of setting small goals for each subteam, building iterations of each component in the project, and testing them on the field with the rover. This led to a fast paced process that yielded ' +
     'well performing results. Having the opportunity to build this project from scratch and learn from the Bureau of Engineering gave the team and I insight of how to to design and meet the clients needs.' 
@@ -60,10 +61,10 @@ const mobileUI = () => {
                         </ul>
                     </article>
                     
-                    <article className="card">
+                    {/* <article className="card">
                         <h3>Live Demo</h3>
                         <a href={project.site} className='btn-clear'>Link</a>
-                    </article>
+                    </article> */}
                 </div>
             
             <div className="title">
@@ -75,6 +76,7 @@ const mobileUI = () => {
             <div className="title">
                 <h1>Project Goal</h1>
                 <p>{project.goal}</p>
+                <p><br></br>{project.goal2}</p>
             </div>
 
             <div className="title">
