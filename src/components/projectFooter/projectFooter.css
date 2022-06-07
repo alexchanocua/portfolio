@@ -7,7 +7,7 @@ footer {
 
 #backToTop {
     color: var(--color-bg-3);
-    background-color: #cac1ab;
+    background-color: rgba(0,0,0,0.1);
     padding: 0.3rem;
     margin: 0.5rem;
     font-style: italic;

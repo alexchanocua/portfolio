@@ -109,6 +109,20 @@ const Experience = () => {
               </div>
             </article>
 
+            <article className='experience__details'>
+              <BsCheckCircleFill className='experience__details-icon'/>
+              <div>
+                <h4>Python</h4>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <BsCheckCircleFill className='experience__details-icon'/>
+              <div>
+                <h4>Machine Learning</h4>
+              </div>
+            </article>
+
             
           </div>
           {/* end of backend */}
