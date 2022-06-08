@@ -12,11 +12,12 @@
     align-items: center;
 }
 
-#backToHome {
-    color: rgba(0,0,0,0.1);
+.backToHome.MuiButton-root {
+    color: black;
     padding: 0.3rem;
     margin: 0.5rem;
     font-style: italic;
+    background-color: rgba(0,0,0,0.1);
 }
 
 #backToHome:hover {

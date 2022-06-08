@@ -32,7 +32,7 @@ const ultra = () => {
         <section className='project'>
             
             <div className="header">
-                <Link to="/portfolio"><Button id='backToHome'>Back to Home</Button></Link>
+                <Link to="/portfolio"><Button className='backToHome'>Back to Home</Button></Link>
             </div>
             
             <div className="container project__container">
