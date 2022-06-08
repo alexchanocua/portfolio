@@ -18,7 +18,7 @@ const project = {
     'a backend to process the data to be stored in our database, and process the data so the City of LAs Navigate LA website can map the data on their layer. ',
     goal2: 'After data collection and processing, the data would be used as an index for severity of sidewalks in the City of LA. Meaning that sidewalks with higher severity would be given priority in repairs to follow Federal ADA standards.',
     role: 'I was the project lead of 10, my specific role was to oversee the project, help out teams with development when needed,  ' +
-        ', oversee the documentation of the several components in the project, and develop the mobile UI which initiated the data collection and controlled the rover.',
+        ' oversee the documentation of the several components in the project, and develop the mobile UI which initiated the data collection and controlled the rover.',
     stackExp: 'The mobile UI was built using HTML, CSS, Javascript, and rosLib. These technologies were chosen because of their lightweight and low barrier of entry for the next team to pick up. ',
     problems: 'The client requested the rover UI be intuitive to use and have minimal user interaction while the rover is collecting data. I worked with our advisor and the team to see what data they needed from the rover. I built and tested several iterations of the UI ' + 
     'that interacted with the robot operating system api (roslib).',
@@ -95,7 +95,7 @@ const mobileUI = () => {
 
             <div className="title">
                 <h1>Lessons Learned</h1>
-                <p>{project.problems}</p>
+                <p>{project.lessons}</p>
             </div>
 
            
