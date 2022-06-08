@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
 import './ultra.css';
 import image from '../../assets/portfolio.jpg';
 import Footer from '../../components/projectFooter/projectFooter';
@@ -94,7 +93,6 @@ const ultra = () => {
             </div>
            
         </section>
-        {/* repalce with project footer */}
         <Footer/>
     </>
   )

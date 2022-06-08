@@ -1,16 +1,7 @@
-import React, {useState} from 'react';
-import Header from './components/header/Header';
-import Nav from './components/nav/Nav';
-import About from './components/about/About';
-import Experience from './components/experience/Experience';
-import Portfolio from './components/portfolio/Portfolio';
-import Testimonials from './components/testimonials/Testimonials';
-import Contact from './components/contact/Contact';
-import Footer from './components/footer/Footer';
-import Ultra from './components/ultra/ultra';
+import React from 'react';
 import MobileUI from './components/mobileUI/mobileUI';
-
 import Home from './components/home/home';
+import Ultra from './components/ultra/ultra';
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
