@@ -10,13 +10,12 @@ header {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    margin-top: 1rem;
 }
 
 .header__container {
     text-align: center;
-    height: 100%;
     position: relative;
+    height: 100vh;
 }
 
 /* ==== CTA styles ==== */
@@ -95,7 +94,11 @@ header {
 /* ==== Media Queries (Medium Devices) ==== */
 @media screen and (max-width: 1024px) {
     header {
-        height: 68vh;
+        height: 100vh;
+    }
+
+    .header__container {
+        height: 100vh;
     }
 }
 
