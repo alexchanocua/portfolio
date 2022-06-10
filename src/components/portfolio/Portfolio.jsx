@@ -47,9 +47,6 @@ const Portfolio = ( ) => {
 
                   <Link to={component}>
                   <div 
-                    onClick={() => {
-                      window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-                    }}
                     className='btn-clear' 
                     target='_blank'>Project Details
                   </div>

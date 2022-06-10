@@ -75,6 +75,9 @@
     .info {
         grid-template-columns: 1fr;
     }
+    .title h1 {
+        text-align: center;
+    }
 }
 
 /* ==== Media Queries (Small Devices) ==== */
@@ -101,5 +104,6 @@
 
     .title h1 {
         font-size: 175%;
+        text-align: center;
     }
 }
