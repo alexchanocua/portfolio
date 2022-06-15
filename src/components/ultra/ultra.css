@@ -74,7 +74,7 @@
     .info {
         grid-template-columns: 1fr;
     }
-    .title h1 {
+    .project__title {
         text-align: center;
     }
 }
@@ -103,6 +103,9 @@
 
     .title h1 {
         font-size: 175%;
+    }
+
+    .project__title {
         text-align: center;
     }
 }

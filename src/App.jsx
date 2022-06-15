@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Routes
 import MobileUI from './components/mobileUI/mobileUI';
 import Home from './components/home/home';
 import Ultra from './components/ultra/ultra';

@@ -38,7 +38,7 @@ const mobileUI = () => {
             
             <div className="container project__container">
                 <div className="title">
-                    <h1>{project.title}</h1>
+                    <h1 className='project__title'>{project.title}</h1>
                     <p>3 minute read</p>
                     <p>{project.description}</p>
                 </div>
